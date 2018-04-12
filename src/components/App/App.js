@@ -4,7 +4,18 @@ import logo from './logo.svg';
 import './App.css';
 import { connect } from 'react-redux';
 import { fakeAction } from '../../actions';
+
 class App extends Component {
+
+  async componentDidMount() {
+    try {
+      const response = await fetch('/api/v1/houses')
+      const houses = await response.json()
+      console.log(houses)
+    } catch (error) {
+      throw error
+    }
+  }
 
   render() {
     return (
@@ -30,7 +41,6 @@ App.propTypes = {
 };
 
 const mapStateToProps = ({ fake }) => ({ fake });
-const mapDispatchToProps = dispatch => ({ fakeAction:
-  () => dispatch(fakeAction())
-});
+const mapDispatchToProps = dispatch => ({ fakeAction:() => dispatch(fakeAction())});
+
 export default connect(mapStateToProps, mapDispatchToProps)(App);
