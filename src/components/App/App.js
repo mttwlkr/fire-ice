@@ -4,17 +4,13 @@ import logo from './logo.svg';
 import './App.css';
 import { connect } from 'react-redux';
 import { fakeAction } from '../../actions';
+import { getHouses } from '../../fetches/getHouses.js'
 
 class App extends Component {
 
   async componentDidMount() {
-    try {
-      const response = await fetch('/api/v1/houses')
-      const houses = await response.json()
-      console.log(houses)
-    } catch (error) {
-      throw error
-    }
+    const houses = await getHouses()
+    console.log(houses)
   }
 
   render() {
