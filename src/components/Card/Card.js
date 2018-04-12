@@ -3,9 +3,7 @@ import React, { Component } from 'react';
 class Card extends Component {
 
   render() {
-
     const { house } = this.props
-
     return (
       <div className='Card'>
       { house &&
@@ -23,5 +21,6 @@ class Card extends Component {
     )  
   }
 }
+
 
 export default Card

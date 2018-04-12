@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import PropTypes, { shape, func, string } from 'prop-types';
+import PropTypes from 'prop-types';
 import logo from './logo.svg';
 import './App.css';
 import { connect } from 'react-redux';
 import { addHousesToStore } from '../../actions';
 import { getHouses } from '../../fetches/getHouses.js';
+import { getSwornMembers } from '../../fetches/getSwornMembers';
 import CardContainer from '../CardContainer/CardContainer.js';
 import Wolf from '../../assets/wolf.gif'
 
