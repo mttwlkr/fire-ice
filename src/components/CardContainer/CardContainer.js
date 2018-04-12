@@ -1,7 +1,8 @@
 import React from 'react';
 import Card from '../Card/Card.js';
+import { connect } from 'react-redux';
 
-const CardContainer = ({houses}) => {
+export const CardContainer = ({houses}) => {
 
   const displayHouses = houses.map((house, index) => {
     return <Card house={house} key={index}/>
@@ -14,4 +15,8 @@ const CardContainer = ({houses}) => {
   )
 }
 
-export default CardContainer
+export const mapStateToProps = (state) => ({
+  houses: state.houses
+})
+
+export default connect(mapStateToProps)(CardContainer)

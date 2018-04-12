@@ -74,5 +74,5 @@ const mockHousesAction = {houses: [
       url: "https://www.anapioficeandfire.com/api/houses/81",
       words: "",
     }  
-    ]
+  ]
 }

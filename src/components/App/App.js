@@ -8,7 +8,7 @@ import { getHouses } from '../../fetches/getHouses.js';
 import CardContainer from '../CardContainer/CardContainer.js';
 import Wolf from '../../assets/wolf.gif'
 
-class App extends Component {
+export class App extends Component {
 
   async componentDidMount() {
     const houses = await getHouses()
@@ -30,7 +30,7 @@ class App extends Component {
         <div className='Display-info'>
           { 
             houses.length > 0  
-              ? <CardContainer houses={houses}/>
+              ? <CardContainer />
               : <img src={Wolf} alt='loading...'/>
           }
         </div>
@@ -40,19 +40,20 @@ class App extends Component {
   }
 }
 
-App.propTypes = {
-  fake: shape({ fake: string }),
-  fakeAction: func.isRequired
-};
-
-const mapStateToProps = (state) => ({
+export const mapStateToProps = (state) => ({
   houses: state.houses
 });
 
-const mapDispatchToProps = (dispatch) => ({ 
+export const mapDispatchToProps = (dispatch) => ({ 
   addHousesToStore: (houses) => dispatch(addHousesToStore(houses))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
 
-
+App.propTypes = {
+  addHousesToStore: PropTypes.func,
+  houses: PropTypes.oneOfType([
+    PropTypes.object,
+    PropTypes.array
+  ]),
+};
