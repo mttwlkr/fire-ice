@@ -1,16 +1,15 @@
-// export const getSwornMembers = async (houses) => {
-  
-//   const promises = await houses.swornMembers.map(aysnc(api) => {
-     
-//     console.log(api)
-//   //     // try {
-//   //       const response = await fetch(api)
-//   //       const swornMembers = await response.json
-//   //       return swornMembers  
-//   //     // } catch (error) {
-//   //     //   throw error
-//   //     // }
+export const getSwornMembers = async (houses) => {
+
+  const promises = houses.map(async(house) => {
     
-//     })
-//   //   return await Promise.all(promises)
-// }
+    const swornMembers = house.swornMembers.map(async(API) => {
+      const response = await fetch(API)
+      const swornMember = await response.json()
+      return swornMember
+    })
+    
+    return await Promise.all(swornMembers)
+  })
+
+  return Promise.all(promises)
+}

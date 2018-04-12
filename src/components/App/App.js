@@ -13,7 +13,7 @@ export class App extends Component {
 
   async componentDidMount() {
     const houses = await getHouses()
-    this.props.addHousesToStore(houses)
+    // this.props.addHousesToStore(houses)
   }
 
   render() {
