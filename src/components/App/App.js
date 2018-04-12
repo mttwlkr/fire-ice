@@ -9,17 +9,10 @@ import CardContainer from '../CardContainer/CardContainer.js';
 import Wolf from '../../assets/wolf.gif'
 
 class App extends Component {
-  constructor() {
-    super()
-    this.state = {
-      loading: true
-    }
-  }
 
   async componentDidMount() {
     const houses = await getHouses()
     this.props.addHousesToStore(houses)
-    this.setState({loading: false})
   }
 
   render() {
