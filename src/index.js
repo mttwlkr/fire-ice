@@ -2,7 +2,6 @@ import './index.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App/App.js';
-import registerServiceWorker from './registerServiceWorker';
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
@@ -19,4 +18,3 @@ ReactDOM.render(
   <App />
 </Provider>
   , document.getElementById('root'));
-registerServiceWorker();

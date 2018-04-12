@@ -7,7 +7,7 @@ export const getSwornMembers = async (houses) => {
       const swornMember = await response.json()
       return swornMember
     })
-    
+
     return await Promise.all(swornMembers)
   })
 

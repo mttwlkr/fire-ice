@@ -5,7 +5,6 @@ import './App.css';
 import { connect } from 'react-redux';
 import { addHousesToStore } from '../../actions';
 import { getHouses } from '../../fetches/getHouses.js';
-import { getSwornMembers } from '../../fetches/getSwornMembers';
 import CardContainer from '../CardContainer/CardContainer.js';
 import Wolf from '../../assets/wolf.gif'
 
@@ -13,7 +12,7 @@ export class App extends Component {
 
   async componentDidMount() {
     const houses = await getHouses()
-    // this.props.addHousesToStore(houses)
+    await this.props.addHousesToStore(houses)
   }
 
   render() {
@@ -46,7 +45,7 @@ export const mapStateToProps = (state) => ({
 });
 
 export const mapDispatchToProps = (dispatch) => ({ 
-  addHousesToStore: (houses) => dispatch(addHousesToStore(houses))
+  addHousesToStore: (houses) => dispatch(addHousesToStore(houses)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);

@@ -1,0 +1,415 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card should match snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Card
+    house={
+        Object {
+            "ancestralWeapons": Array [
+              "Lady Forlorn",
+            ],
+            "cadetBranches": Array [],
+            "coatOfArms": "Three black ravens in flight, holding three red hearts, on a white field(Argent, three ravens volant sable, each clutching in their claws a heart gules)",
+            "currentLord": "https://www.anapioficeandfire.com/api/characters/681",
+            "diedOut": "",
+            "founded": "",
+            "founder": "https://www.anapioficeandfire.com/api/characters/256",
+            "heir": "https://www.anapioficeandfire.com/api/characters/677",
+            "name": "House Corbray of Heart's Home",
+            "overlord": "https://www.anapioficeandfire.com/api/houses/7",
+            "region": "",
+            "seats": Array [
+              "Heart's Home",
+            ],
+            "swornMembers": Array [
+              Object {
+                "born": "",
+                "culture": "",
+                "gender": "Male",
+                "name": "Corwyn Corbray",
+                "url": "https://www.anapioficeandfire.com/api/characters/255",
+              },
+              Object {
+                "born": "",
+                "culture": "Andal",
+                "gender": "Male",
+                "name": "Corwyn Corbray",
+                "url": "https://www.anapioficeandfire.com/api/characters/256",
+              },
+              Object {
+                "born": "",
+                "culture": "",
+                "gender": "Male",
+                "name": "Gwayne Corbray",
+                "url": "https://www.anapioficeandfire.com/api/characters/447",
+              },
+              Object {
+                "born": "",
+                "culture": "",
+                "gender": "Male",
+                "name": "Lucas Corbray",
+                "url": "https://www.anapioficeandfire.com/api/characters/654",
+              },
+              Object {
+                "born": "At Heart's Home",
+                "culture": "",
+                "gender": "Male",
+                "name": "Lyn Corbray",
+                "url": "https://www.anapioficeandfire.com/api/characters/677",
+              },
+              Object {
+                "born": "In 260 AC (roughly), at Heart's Home",
+                "culture": "",
+                "gender": "Male",
+                "name": "Lyonel Corbray",
+                "url": "https://www.anapioficeandfire.com/api/characters/681",
+              },
+              Object {
+                "born": "In 116 AC, at Pentos",
+                "culture": "",
+                "gender": "Female",
+                "name": "Rhaena Targaryen",
+                "url": "https://www.anapioficeandfire.com/api/characters/871",
+              },
+              Object {
+                "born": "",
+                "culture": "Braavosi",
+                "gender": "Male",
+                "name": "Baelish",
+                "url": "https://www.anapioficeandfire.com/api/characters/1182",
+              },
+            ],
+            "titles": undefined,
+            "url": "https://www.anapioficeandfire.com/api/houses/81",
+            "words": "",
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div>
+        <h1>
+                House Corbray of Heart's Home
+        </h1>
+        <p />
+        <p>
+                Heart's Home
+        </p>
+        <p />
+        <p>
+                Three black ravens in flight, holding three red hearts, on a white field(Argent, three ravens volant sable, each clutching in their claws a heart gules)
+        </p>
+        <p>
+                Lady Forlorn
+        </p>
+        <p />
+        <ul />
+</div>,
+      "className": "Card",
+      "onClick": [Function],
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1>
+            House Corbray of Heart's Home
+</h1>,
+          <p />,
+          <p>
+            Heart's Home
+</p>,
+          <p />,
+          <p>
+            Three black ravens in flight, holding three red hearts, on a white field(Argent, three ravens volant sable, each clutching in their claws a heart gules)
+</p>,
+          <p>
+            Lady Forlorn
+</p>,
+          <p />,
+          <ul />,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "House Corbray of Heart's Home",
+          },
+          "ref": null,
+          "rendered": "House Corbray of Heart's Home",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "",
+          },
+          "ref": null,
+          "rendered": "",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Heart's Home",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Heart's Home",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Three black ravens in flight, holding three red hearts, on a white field(Argent, three ravens volant sable, each clutching in their claws a heart gules)",
+          },
+          "ref": null,
+          "rendered": "Three black ravens in flight, holding three red hearts, on a white field(Argent, three ravens volant sable, each clutching in their claws a heart gules)",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Lady Forlorn",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Lady Forlorn",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "",
+          },
+          "ref": null,
+          "rendered": "",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "",
+          },
+          "ref": null,
+          "rendered": "",
+          "type": "ul",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div>
+          <h1>
+                    House Corbray of Heart's Home
+          </h1>
+          <p />
+          <p>
+                    Heart's Home
+          </p>
+          <p />
+          <p>
+                    Three black ravens in flight, holding three red hearts, on a white field(Argent, three ravens volant sable, each clutching in their claws a heart gules)
+          </p>
+          <p>
+                    Lady Forlorn
+          </p>
+          <p />
+          <ul />
+</div>,
+        "className": "Card",
+        "onClick": [Function],
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1>
+              House Corbray of Heart's Home
+</h1>,
+            <p />,
+            <p>
+              Heart's Home
+</p>,
+            <p />,
+            <p>
+              Three black ravens in flight, holding three red hearts, on a white field(Argent, three ravens volant sable, each clutching in their claws a heart gules)
+</p>,
+            <p>
+              Lady Forlorn
+</p>,
+            <p />,
+            <ul />,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "House Corbray of Heart's Home",
+            },
+            "ref": null,
+            "rendered": "House Corbray of Heart's Home",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "",
+            },
+            "ref": null,
+            "rendered": "",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Heart's Home",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Heart's Home",
+            ],
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Three black ravens in flight, holding three red hearts, on a white field(Argent, three ravens volant sable, each clutching in their claws a heart gules)",
+            },
+            "ref": null,
+            "rendered": "Three black ravens in flight, holding three red hearts, on a white field(Argent, three ravens volant sable, each clutching in their claws a heart gules)",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Lady Forlorn",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Lady Forlorn",
+            ],
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "",
+            },
+            "ref": null,
+            "rendered": "",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "",
+            },
+            "ref": null,
+            "rendered": "",
+            "type": "ul",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
